@@ -17,7 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/main/browser",
+            "outputPath": "../../www/f/dist/",
+            "deployUrl": "/f/dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -38,6 +39,10 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/hmr.ts",
+                  "with": "src/hmr-blank.ts"
                 }
               ],
               "optimization": true,
@@ -66,7 +71,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "main:build"
+            "browserTarget": "main:build",
+            "deployUrl": "",
+            "aot": true,
+            "hmr": true,
+            "hmrWarning": false,
+            "sourceMap": true,
+            "progress": false,
+            "proxyConfig": "proxy.conf.json",
+            "port": 4201
           },
           "configurations": {
             "production": {
@@ -148,7 +161,8 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
             "browserTarget": "main:build",
-            "serverTarget": "main:server"
+            "serverTarget": "main:server",
+            "port": 4201
           },
           "configurations": {
             "production": {
