@@ -1,0 +1,41 @@
+# Build
+/data/compiled-css
+/www/f/dist/
+/www/f/dist-dev/
+
+# Thumbnails
+._*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+## Node
+/node_modules
+
+# Idea
+.idea
+
+*.log
+*.pyc
+*.orig
+*.iml
+*.ipr
+*.iws
+*.csv
+
+# Bitrix
+/www/api/i18n/*
+/www/api/v1/menu.json
+/www/bitrix
+/www/vendor/*
+/www/upload
+/www/local/__test/*
+/www/local/__log
+/www/api/v1/test.php
