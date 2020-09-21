@@ -1,1 +1,11 @@
-<p>catalog works1!</p>
+<p>catalog works!</p>
+
+<div *ngIf="cropList">
+  <h3>Crop List</h3>
+  <div class="crop-list">
+    <div *ngFor="let crop of cropList" class="crop-item">
+      <img [src]="crop.image" [alt]="crop.name" width="30" height="30" />
+      <span class="crop-item__name" [innerHTML]="crop.name"></span>
+    </div>
+  </div>
+</div>

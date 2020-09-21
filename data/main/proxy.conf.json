@@ -1,21 +1,16 @@
 {
   "/api//*": {
-    "target": "https://maunfeld.dev.design.ru",
-    "secure": false,
-    "changeOrigin": true
-  },
-  "/download//*": {
-    "target": "https://maunfeld.dev.design.ru",
+    "target": "https://avgust.dev.design.ru",
     "secure": false,
     "changeOrigin": true
   },
   "/f//*": {
-    "target": "https://maunfeld.dev.design.ru",
+    "target": "https://avgust.dev.design.ru",
     "secure": false,
     "changeOrigin": true
   },
   "/upload//*": {
-    "target": "https://maunfeld.dev.design.ru",
+    "target": "https://avgust.dev.design.ru",
     "secure": false,
     "changeOrigin": true
   }

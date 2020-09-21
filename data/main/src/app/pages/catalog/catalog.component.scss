@@ -1,0 +1,9 @@
+.crop-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &__name {
+    margin-left: 10px;
+  }
+}
